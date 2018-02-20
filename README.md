@@ -1,10 +1,10 @@
 <div align="center">
-    <a href="http://github.com/cssquirrel/ernest/">
-        <img width="239" src="https://github.com/cssquirrel/Ernest/blob/master/resources/ernest-title.png" />
+    <a href="http://github.com/offroadcode/ernest/">
+        <img width="239" src="https://github.com/offroadcode/Ernest/blob/master/resources/ernest-title.png" />
     </a>
     <br>
     <br>
-    <img src="https://img.shields.io/badge/version-1.0.0.beta2-yellow.svg" />
+    <img src="https://img.shields.io/badge/version-1.0.0-green.svg" />
     <img src="https://img.shields.io/badge/our-umbraco-orange.svg">
     <h1>Ernest</h1>
 </div>
@@ -12,7 +12,7 @@
 Ernest is a [Hemingway](http://www.hemingwayapp.com/)-like rich text editor package for the [Umbraco](https://umbraco.com/) backoffice by [Offroadcode](https://offroadcode.com). It helps editors ensure there's focus and clarity in their writing. Words and passages that could use some attention are highlighted with explanations why. 
 
 <div align="center">
-    <img width="800" src="https://github.com/cssquirrel/Ernest/blob/master/resources/ernest-screenshot.png" />
+    <img width="800" src="https://github.com/offroadcode/Ernest/blob/master/resources/ernest-screenshot.png" />
 </div>
 
 ## Installation & Use

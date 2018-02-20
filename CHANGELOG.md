@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.0.0
+
+### Changed
+
+* Version bump for release.
+
 ## v1.0.0-beta.2
 
 ### Added
