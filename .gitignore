@@ -1,0 +1,7 @@
+build/package-lock.json
+build/node_modules/
+build/umbraco/Ernest/Ernest/bin/Debug/
+build/umbraco/Ernest/Ernest/obj/Debug/
+build/umbraco/Ernest/packages/
+
+build/umbraco/Ernest/.vs/

@@ -1,0 +1,216 @@
+/** * Ernest-specific styles. */
+.ernest-container {
+  /** * Draft v0.10.4 * * Copyright (c) 2013-present, Facebook, Inc. * All rights reserved. * * This source code is licensed under the BSD-style license found in the * LICENSE file in the root directory of this source tree. An additional grant * of patent rights can be found in the PATENTS file in the same directory. */ }
+
+.ernest-container .DraftEditor-editorContainer, .ernest-container .DraftEditor-root, .ernest-container .public-DraftEditor-content {
+  height: inherit;
+  text-align: initial; }
+
+.ernest-container .public-DraftEditor-content[contenteditable=true] {
+  -webkit-user-modify: read-write-plaintext-only; }
+
+.ernest-container .DraftEditor-root {
+  position: relative; }
+
+.ernest-container .DraftEditor-editorContainer {
+  background-color: rgba(255, 255, 255, 0);
+  border-left: .1px solid transparent;
+  position: relative;
+  z-index: 1; }
+
+.ernest-container .public-DraftEditor-block {
+  position: relative; }
+
+.ernest-container .DraftEditor-alignLeft .public-DraftStyleDefault-block {
+  text-align: left; }
+
+.ernest-container .DraftEditor-alignLeft .public-DraftEditorPlaceholder-root {
+  left: 0;
+  text-align: left; }
+
+.ernest-container .DraftEditor-alignCenter .public-DraftStyleDefault-block {
+  text-align: center; }
+
+.ernest-container .DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; }
+
+.ernest-container .DraftEditor-alignRight .public-DraftStyleDefault-block {
+  text-align: right; }
+
+.ernest-container .DraftEditor-alignRight .public-DraftEditorPlaceholder-root {
+  right: 0;
+  text-align: right; }
+
+.ernest-container .public-DraftEditorPlaceholder-root {
+  color: #9197a3;
+  position: absolute;
+  z-index: 1; }
+
+.ernest-container .public-DraftEditorPlaceholder-hasFocus {
+  color: #bdc1c9; }
+
+.ernest-container .DraftEditorPlaceholder-hidden {
+  display: none; }
+
+.ernest-container .public-DraftStyleDefault-block {
+  position: relative;
+  white-space: pre-wrap; }
+
+.ernest-container .public-DraftStyleDefault-ltr {
+  direction: ltr;
+  text-align: left; }
+
+.ernest-container .public-DraftStyleDefault-rtl {
+  direction: rtl;
+  text-align: right; }
+
+.ernest-container .public-DraftStyleDefault-listLTR {
+  direction: ltr; }
+
+.ernest-container .public-DraftStyleDefault-listRTL {
+  direction: rtl; }
+
+.ernest-container .public-DraftStyleDefault-ol, .ernest-container .public-DraftStyleDefault-ul {
+  margin: 16px 0;
+  padding: 0; }
+
+.ernest-container .public-DraftStyleDefault-depth0.public-DraftStyleDefault-listLTR {
+  margin-left: 1.5em; }
+
+.ernest-container .public-DraftStyleDefault-depth0.public-DraftStyleDefault-listRTL {
+  margin-right: 1.5em; }
+
+.ernest-container .public-DraftStyleDefault-depth1.public-DraftStyleDefault-listLTR {
+  margin-left: 3em; }
+
+.ernest-container .public-DraftStyleDefault-depth1.public-DraftStyleDefault-listRTL {
+  margin-right: 3em; }
+
+.ernest-container .public-DraftStyleDefault-depth2.public-DraftStyleDefault-listLTR {
+  margin-left: 4.5em; }
+
+.ernest-container .public-DraftStyleDefault-depth2.public-DraftStyleDefault-listRTL {
+  margin-right: 4.5em; }
+
+.ernest-container .public-DraftStyleDefault-depth3.public-DraftStyleDefault-listLTR {
+  margin-left: 6em; }
+
+.ernest-container .public-DraftStyleDefault-depth3.public-DraftStyleDefault-listRTL {
+  margin-right: 6em; }
+
+.ernest-container .public-DraftStyleDefault-depth4.public-DraftStyleDefault-listLTR {
+  margin-left: 7.5em; }
+
+.ernest-container .public-DraftStyleDefault-depth4.public-DraftStyleDefault-listRTL {
+  margin-right: 7.5em; }
+
+.ernest-container .public-DraftStyleDefault-unorderedListItem {
+  list-style-type: square;
+  position: relative; }
+
+.ernest-container .public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth0 {
+  list-style-type: disc; }
+
+.ernest-container .public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth1 {
+  list-style-type: circle; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem {
+  list-style-type: none;
+  position: relative; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listLTR:before {
+  left: -36px;
+  position: absolute;
+  text-align: right;
+  width: 30px; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listRTL:before {
+  position: absolute;
+  right: -36px;
+  text-align: left;
+  width: 30px; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem:before {
+  content: counter(ol0) ". ";
+  counter-increment: ol0; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth1:before {
+  content: counter(ol1) ". ";
+  counter-increment: ol1; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth2:before {
+  content: counter(ol2) ". ";
+  counter-increment: ol2; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth3:before {
+  content: counter(ol3) ". ";
+  counter-increment: ol3; }
+
+.ernest-container .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth4:before {
+  content: counter(ol4) ". ";
+  counter-increment: ol4; }
+
+.ernest-container .public-DraftStyleDefault-depth0.public-DraftStyleDefault-reset {
+  counter-reset: ol0; }
+
+.ernest-container .public-DraftStyleDefault-depth1.public-DraftStyleDefault-reset {
+  counter-reset: ol1; }
+
+.ernest-container .public-DraftStyleDefault-depth2.public-DraftStyleDefault-reset {
+  counter-reset: ol2; }
+
+.ernest-container .public-DraftStyleDefault-depth3.public-DraftStyleDefault-reset {
+  counter-reset: ol3; }
+
+.ernest-container .public-DraftStyleDefault-depth4.public-DraftStyleDefault-reset {
+  counter-reset: ol4; }
+
+.ernest-container .text-editor-wrapper {
+  border: 1px solid #bbbabf;
+  margin-bottom: 10px;
+  min-height: 100px; }
+
+.ernest-container .text-editor-wrapper .DraftEditor-editorContainer {
+  padding: 5px; }
+
+.ernest-container .prose-suggestions-list {
+  list-style-type: none;
+  margin-left: 0;
+  max-width: 50%; }
+
+.ernest-container .suggestion {
+  background-color: lightgreen;
+  padding: 5px;
+  margin-bottom: 0.5em; }
+
+.ernest-container .suggestion.passive {
+  background-color: #c4ed9d; }
+
+.ernest-container .suggestion.illusion, .ernest-container .suggestion.cliche, .ernest-container .suggestion.eprime {
+  background-color: #f7ecb5; }
+
+.ernest-container .suggestion.so, .ernest-container .suggestion.thereIs, .ernest-container .suggestion.weasel {
+  background-color: #e3b7e8; }
+
+.ernest-container .suggestion.adverb {
+  background-color: #c4e3f3; }
+
+.ernest-container .suggestion.tooWordy {
+  background-color: #e4b9b9; }
+
+.ernest-container .toolbar {
+  /* text-align: center;
+     max-width: 66.6%;
+    */
+  margin-bottom: 5px; }
+
+.ernest-container .toolbar button {
+  border: 1px solid #bbbabf;
+  background: #f9f9f9;
+  padding: 5px 10px;
+  margin-right: 5px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.25; }

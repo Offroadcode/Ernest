@@ -1,0 +1,18 @@
+{
+    propertyEditors: [{
+        name: "Ernest Rich Text Editor",
+        alias: "Ernest.Editor",
+        icon: "icon-newspaper",
+        group: "rich content",
+        editor: {
+            view: "~/app_plugins/Ernest/views/container.html",
+            valueType: "JSON" 
+        }
+    }],
+    javascript: [
+        "~/app_plugins/Ernest/js/bundle.js"
+    ],
+    css: [
+        "~/app_plugins/Ernest/css/styles.css"
+    ]
+}
