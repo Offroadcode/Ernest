@@ -17,7 +17,7 @@ Ernest is a [Hemingway](http://www.hemingwayapp.com/)-like rich text editor pack
 
 ## Installation & Use
 
-You can install Ernest to your Umbraco project using either the Umbraco package installer or by downloading and installing it locally from the [package on the Our package repo](http://urlgoeshere).
+You can install Ernest to your Umbraco project using either the Umbraco package installer or by downloading and installing it locally from the [package on the Our package repo](https://our.umbraco.org/projects/website-utilities/ernest/).
 
 After installing the package, create a new DataType and select "Ernest Rich Text Editor" from the property editor dropdown. Add it to a DocType of your choice.
 
@@ -44,7 +44,7 @@ Do you want to contribute to Ernest, or modify its functionality? Here's how to 
 
 ### Editing the Ernest Code
 
-Unlike most other Umbraco property editors, Ernest is written in [React](https://facebook.github.io/react/), which sits on top of a thin [Angular](https://angular.io/) wrapper layer that handles the communication with the backoffice. To learn more about creating your own Umbraco packages that use React in Angular, [read this blog post](http://urlgoeshere) at Offroadcode. The text editor utilizes the [Draft.js](https://draftjs.org/) framework, and the writing suggestions are powered by [write good](https://github.com/btford/write-good).
+Unlike most other Umbraco property editors, Ernest is written in [React](https://facebook.github.io/react/), which sits on top of a thin [Angular](https://angular.io/) wrapper layer that handles the communication with the backoffice. The text editor utilizes the [Draft.js](https://draftjs.org/) framework, and the writing suggestions are powered by [write good](https://github.com/btford/write-good).
 
 The files to edit are located in `/build/assets`.
 
@@ -65,3 +65,4 @@ The following items are on our current wishlist for improving Ernest.
 * Combining the highlighted suggestions beneath the editor to reduce the vertical impact of many suggestions.
 * Putting tooltips over highlights with the suggestion text when the mouse is over them.
 * Abstracting out the prose suggestion functionality so that Write Good can be swapped out or augmented with other prose suggestion scripts.
+* Add readability/grade level metrics.
