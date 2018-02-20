@@ -5,7 +5,7 @@
     <br>
     <br>
     <img src="https://img.shields.io/badge/version-1.0.0-green.svg" />
-    <img src="https://img.shields.io/badge/our-umbraco-orange.svg">
+    <a href="https://our.umbraco.org/projects/website-utilities/ernest/"><img src="https://img.shields.io/badge/our-umbraco-orange.svg"></a>
     <h1>Ernest</h1>
 </div>
 
