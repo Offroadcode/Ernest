@@ -29,7 +29,7 @@ The content of the Ernest property editor can be output in your templates as HTM
 
 ## Questions or Issues?
 
-If you have questions, feel free to ask them [here](http://urlgoeshere).
+If you have questions, feel free to ask them [here](https://github.com/Offroadcode/Ernest/issues).
 
 ## Contributing
 
