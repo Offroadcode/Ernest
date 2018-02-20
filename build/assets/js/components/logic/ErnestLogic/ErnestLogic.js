@@ -9,7 +9,7 @@ import {
 	RichUtils,
 	SelectionState
 } from 'draft-js';
-import {stateToHTML} from 'draft-js-export-html';
+import { stateToHTML } from 'draft-js-export-html';
 
 // utils
 import Constants from '../../../utils/Constants';
@@ -29,10 +29,11 @@ class ErnestLogic extends React.Component {
 		super(props);
 
 		const value = props.value;
-		const contentState = value && value.raw && value.raw !== '' ? convertFromRaw(value.raw) : false;
-		const editorState = contentState 
-				? EditorState.createWithContent(contentState)
-				: EditorState.createEmpty();
+		const contentState =
+			value && value.raw && value.raw !== '' ? convertFromRaw(value.raw) : false;
+		const editorState = contentState
+			? EditorState.createWithContent(contentState)
+			: EditorState.createEmpty();
 
 		this.state = {
 			editor: editorState
@@ -141,7 +142,7 @@ class ErnestLogic extends React.Component {
 	 * @param {RawDraftContentState} newProps.value
 	 * @returns {boolean}
 	 */
-	isContentFromPropsNew = (newProps: { value: {raw: RawDraftContentState }}) => {
+	isContentFromPropsNew = (newProps: { value: { raw: RawDraftContentState } }) => {
 		const editorState = this.state.editor;
 		const currentRaw = JSON.stringify(convertToRaw(editorState.getCurrentContent()));
 		const nextRaw = JSON.stringify(newProps.value.raw);
@@ -155,7 +156,7 @@ class ErnestLogic extends React.Component {
 	 */
 	updateEditorStateFromValue = (value: RawDraftContentState) => {
 		if (value && value !== '') {
-            const editorState = this.state.editor;
+			const editorState = this.state.editor;
 			const contentState = convertFromRaw(value);
 			const newEditorState = EditorState.push(editorState, contentState);
 			this.updateState({ editor: newEditorState });
@@ -186,15 +187,15 @@ class ErnestLogic extends React.Component {
 			console.groupEnd('===ErnestLogic===');
 		}
 		return this.state;
-    };
-    
-    updateValue = (editor: EditorState) => {
-        const value = {
-            raw: this.convertEditorStateToValue(this.state.editor),
-            html: this.convertEditorStateToHtml(this.state.editor)
-        };
-        this.props.onValueChange(value);        
-    }
+	};
+
+	updateValue = (editor: EditorState) => {
+		const value = {
+			raw: this.convertEditorStateToValue(this.state.editor),
+			html: this.convertEditorStateToHtml(this.state.editor)
+		};
+		this.props.onValueChange(value);
+	};
 
 	// Event Handlers //////////////////////////////////////////////////////////
 
@@ -212,10 +213,10 @@ class ErnestLogic extends React.Component {
 		const newEditorState = StyleHelpers.toggleBlockType(this.state.editor, buttonType);
 
 		this.updateState({ editor: newEditorState }, () => {
-            this.updateValue(this.state.editor);
+			this.updateValue(this.state.editor);
 		});
-    };
-    
+	};
+
 	/**
 	 * @method onInlineClick
 	 * @param {Event} e
@@ -237,7 +238,7 @@ class ErnestLogic extends React.Component {
 		const newEditorState = StyleHelpers.toggleInlineStyle(this.state.editor, options);
 
 		this.updateState({ editor: newEditorState }, () => {
-            this.updateValue(this.state.editor);
+			this.updateValue(this.state.editor);
 		});
 	};
 
@@ -261,7 +262,7 @@ class ErnestLogic extends React.Component {
 		this.updateState({ editor: cleaned }, () => {
 			const highlighted = this.highlightSuggestions(this.state.editor);
 			this.updateState({ editor: highlighted }, () => {
-                this.updateValue(this.state.editor);
+				this.updateValue(this.state.editor);
 			});
 		});
 	};

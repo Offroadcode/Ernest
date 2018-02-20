@@ -26,7 +26,7 @@ const AngularWrapper = function($scope, $element) {
 	 * the Angular controller's state.
 	 */
 	$scope.updateAngular = function(value) {
-        $scope.model.value = value;
+		$scope.model.value = value;
 		$scope.$apply();
 	};
 

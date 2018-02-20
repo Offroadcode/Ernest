@@ -39,53 +39,53 @@ const styleMap = {
  * @returns {JSX.Element}
  */
 class Ernest extends React.Component {
-    constructor (props) {
-        super(props);
-    }
+	constructor(props) {
+		super(props);
+	}
 
-    // React Lifecycle Methods /////////////////////////////////////////////////
-        
-    // Helper Functions ////////////////////////////////////////////////////////
-    
+	// React Lifecycle Methods /////////////////////////////////////////////////
+
+	// Helper Functions ////////////////////////////////////////////////////////
+
 	// Event Handlers //////////////////////////////////////////////////////////
 
-    /**
-     * @method onFocusClick - If the user clicks on the container outside of the 
-     * actual editor, focus on the editor.
-     * @param {Event} e
-     * @returns {void}
-     */
-    onFocusClick = (e) => {
-        if (e) {
-            e.preventDefault();
-        }
-        this.refs.editor.focus();
-    }
+	/**
+	 * @method onFocusClick - If the user clicks on the container outside of the
+	 * actual editor, focus on the editor.
+	 * @param {Event} e
+	 * @returns {void}
+	 */
+	onFocusClick = (e) => {
+		if (e) {
+			e.preventDefault();
+		}
+		this.refs.editor.focus();
+	};
 
 	// Render Assisting Methods ////////////////////////////////////////////////
 
-	// Render //////////////////////////////////////////////////////////////////    
+	// Render //////////////////////////////////////////////////////////////////
 
-    render = () => {
-        const events = this.props.events;
-        const editor = this.props.editor;
-        const value = editor ? editor : EditorState.createEmpty();
+	render = () => {
+		const events = this.props.events;
+		const editor = this.props.editor;
+		const value = editor ? editor : EditorState.createEmpty();
 
-        return (
-            <div className="ernest-container">
-                <Toolbar events={events} />
-                <div className="text-editor-wrapper" onClick={this.onFocusClick}>
-                    <Editor 
-                        customStyleMap={styleMap} 
-                        editorState={value} 
-                        onChange={events.onValueChange} 
-                        ref="editor"    
-                    />
-                </div>
-                <Suggestions suggestions={this.props.suggestions} />
-            </div>
-        );
-    }
-};
+		return (
+			<div className="ernest-container">
+				<Toolbar events={events} />
+				<div className="text-editor-wrapper" onClick={this.onFocusClick}>
+					<Editor
+						customStyleMap={styleMap}
+						editorState={value}
+						onChange={events.onValueChange}
+						ref="editor"
+					/>
+				</div>
+				<Suggestions suggestions={this.props.suggestions} />
+			</div>
+		);
+	};
+}
 
 module.exports = Ernest;
